@@ -75,4 +75,57 @@ print(a<b);
 print(a>=b);
 print(a<=b);
 
+ print("Conditional");
+  var nilai ;
+  nilai = 50;
+  
+  if(nilai>=80){
+    print('A');
+  }
+  else if (nilai<=80 && nilai>=50) {
+    print('B');
+    
+  }
+  else {
+   print("Tidak Lulus"); 
+  }
+   //function
+  print("Function");
+  hitungNilai();
+ var p= hitungNilai1(2,50);
+  print(p);
+ var n= hitungNilai2(mapel1 : 50 , mapel2 : 2);
+  print(n);
+ var o= hitungNilai3(75,90);
+
+
+  }
+  hitungNilai(){
+    print("hitung nilai");
+    
+}
+//positional argument
+hitungNilai1(mapel1 , mapel2, [mapel3]){
+  var nilaiAhkir;
+  if(mapel3 != null){
+     nilaiAhkir= mapel1 / mapel2 + mapel3;
+  } else {
+     nilaiAhkir= mapel1 / mapel2;
+  }
+      return nilaiAhkir;
+}
+//main argument
+hitungNilai2({mapel1 , mapel2}){
+    var nilaiAhkir;
+  if(mapel2 != null){
+     nilaiAhkir= mapel1 / mapel2;
+  } else {
+     nilaiAhkir= mapel1;
+  }
+      return nilaiAhkir;
+}
+//void
+void hitungNilai3(mapel1, mapel2){
+  var nilaiAhkir= mapel1 + mapel2;
+      print(nilaiAhkir);
 }
