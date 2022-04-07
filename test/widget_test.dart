@@ -97,8 +97,13 @@ print(a<=b);
  var n= hitungNilai2(mapel1 : 50 , mapel2 : 2);
   print(n);
  var o= hitungNilai3(75,90);
-
-
+ //final = imutable / tidak bisa dirubah
+  //const final
+  //const
+ // const String mahasiswa = "beben";
+final String mahasiswafk;
+  mahasiswafk = "beben";
+  print(mahasiswafk);
   }
   hitungNilai(){
     print("hitung nilai");
