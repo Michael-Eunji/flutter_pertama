@@ -104,7 +104,19 @@ print(a<=b);
 final String mahasiswafk;
   mahasiswafk = "beben";
   print(mahasiswafk);
+
+    //null safety
+  //?,!,late
+  //? digunakan untuk boleh null
+  //String? jurusan;
+  //di isi nanti (late)
+late String jurusanns;
+jurusanns = "Teknik Informatika";
+  //jurusan = "TI";
+  // memaksa untuk di jalankan / yakin ad datanya
+  print(jurusanns.length);
   }
+
   hitungNilai(){
     print("hitung nilai");
     
