@@ -46,9 +46,11 @@ void main() async {
 // //     return "Hitung Nilai";
 //   });
 
+
+//contoh lain
 funct1(); 
   try{
-  var value =   await funct4(30);
+  var value =   await funct4("Agus");
     print (value);
       print("try");
   } catch(error){
@@ -56,7 +58,8 @@ funct1();
     print("error");
   }
   funct2();
-  await funct4(20).then(
+
+  await funct3(20).then(
     (value) {
       print(value);
       print("then");
@@ -76,7 +79,7 @@ funct2() {
 }
 
 Future<String> funct3(int nilaii) {
-  return Future.delayed(Duration(seconds: 2), () {
+  return Future.delayed(Duration(seconds: 4), () {
      if (nilaii <= 30) {
       return "Lulus";
     } else {
@@ -85,15 +88,13 @@ Future<String> funct3(int nilaii) {
   });
 }
 
-Future<String> funct4(int nilai) {
+Future<String> funct4(String namasiswa) {
   return Future.delayed(Duration(seconds: 2), () {
-//     int nilai;
 
-    if (nilai >= 50) {
-      return "Lulus";
+    if (namasiswa == "Agus") {
+      return "Nama Mahasiswa Benar";
     } else {
-      throw "Tidak Lulus";
+      throw "Nama Mahasiswa Salah";
     }
-//     return "Hitung Nilai";
   });
 }
